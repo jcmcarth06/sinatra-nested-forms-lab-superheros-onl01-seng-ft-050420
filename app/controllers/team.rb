@@ -1,41 +1,9 @@
-class Team
-  attr_accessor :name, :type, :booty
-
-  @@class Ship
-  attr_accessor :name, :type, :booty
-
-  @@ships = []
+class Teams
+  attr_accessor :name, :motto
 
   def initialize(params)
     @name = params[:name]
-    @type = params[:type]
-    @booty = params[:booty]
-    @@ships << self
-  end
-
-  def self.all
-    @@ships
-  end
-
-  def self.clear
-    @@ships = []
-  end
-
-end = []
-
-  def initialize(params)
-    @name = params[:name]
-    @type = params[:type]
-    @booty = params[:booty]
-    @@ships << self
-  end
-
-  def self.all
-    @@ships
-  end
-
-  def self.clear
-    @@ships = []
+    @motto = params[:motto]  
   end
 
 end
